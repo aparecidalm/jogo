@@ -53,14 +53,14 @@ function tempojogo(){
 		clearTimeout();
 	}else{
 		if (second >= 120){
-			document.images['a1'].src="images/Forca_1_05.gif";
-			document.images['a2'].src="images/Forca_08.gif";
-	    	document.images['a3'].src="images/Forca_09.gif";
-		    document.images['a4'].src="images/Forca_07.gif";
-		    document.images['a5'].src="images/Forca_10.gif";
-	    	document.images['a6'].src="images/Forca_14.gif";
-		    document.images['a7'].src="images/Forca_16.gif";
-		    document.images['a8'].src="images/Forca_17.gif";
+			document.images['a1'].src="Forca_1_05.gif";
+			document.images['a2'].src="Forca_08.gif";
+	    	document.images['a3'].src="Forca_09.gif";
+		    document.images['a4'].src="Forca_07.gif";
+		    document.images['a5'].src="Forca_10.gif";
+	    	document.images['a6'].src="Forca_14.gif";
+		    document.images['a7'].src="Forca_16.gif";
+		    document.images['a8'].src="Forca_17.gif";
    			document.f.tried.value="Seu tempo acabou! Clique em Iniciar";
 	       	document.f.word.value=words[index];
 		    document.f.score.value--;
@@ -99,19 +99,19 @@ function pick(){
   }  
 		document.f.word.value=choice;
 		if (!blank){
-			document.images['a1'].src="images/Forca_2_05.gif";
-			document.images['a2'].src="images/Forca_2_08.gif";
-			document.images['a3'].src="images/Forca_2_09.gif";
-			document.images['a4'].src="images/Forca_2_07.gif";
-			document.images['a5'].src="images/Forca_10.gif";
-			document.images['a6'].src="images/Forca_14.gif";
-			document.images['a7'].src="images/Forca_16.gif";
-			document.images['a8'].src="images/Forca_17.gif";
-			document.images['a9'].src="images/Forca_2_02.gif";
-			document.images['a10'].src="images/Forca_2_01.gif";
-			document.images['a11'].src="images/Forca_2_03.gif";
-			document.images['a12'].src="images/Forca_2_04.gif";
-			document.images['a13'].src="images/Forca_2_13.gif";															
+			document.images['a1'].src="Forca_2_05.gif";
+			document.images['a2'].src="Forca_2_08.gif";
+			document.images['a3'].src="Forca_2_09.gif";
+			document.images['a4'].src="Forca_2_07.gif";
+			document.images['a5'].src="Forca_10.gif";
+			document.images['a6'].src="Forca_14.gif";
+			document.images['a7'].src="Forca_16.gif";
+			document.images['a8'].src="Forca_17.gif";
+			document.images['a9'].src="Forca_2_02.gif";
+			document.images['a10'].src="Forca_2_01.gif";
+			document.images['a11'].src="Forca_2_03.gif";
+			document.images['a12'].src="Forca_2_04.gif";
+			document.images['a13'].src="Forca_2_13.gif";															
 			acabou = true;
 		    document.f.tried.value="=== PARABÉNS, você acertou! ===";
 		    document.f.score.value++;
@@ -136,19 +136,19 @@ function new_word(form){
     bravo[0]="$"; //words[index].charAt(0);
     bravo[1]="$"; //words[index].charAt(words[index].length-1);
     bravo_index=1;
-	document.images['a1'].src="images/Forca__05.gif";
-	document.images['a2'].src="images/Forca__08.gif";
-	document.images['a3'].src="images/Forca__09.gif";
-	document.images['a4'].src="images/Forca__07.gif";
-	document.images['a5'].src="images/Forca__10.gif";
-	document.images['a6'].src="images/Forca__14.gif";
-	document.images['a7'].src="images/Forca__16.gif";
-	document.images['a8'].src="images/Forca__17.gif";
-	document.images['a9'].src="images/Forca__02.gif";
-	document.images['a10'].src="images/Forca__01.gif";
-	document.images['a11'].src="images/Forca__03.gif";
-	document.images['a12'].src="images/Forca__04.gif";
-	document.images['a13'].src="images/Forca__13.gif";
+	document.images['a1'].src="Forca__05.gif";
+	document.images['a2'].src="Forca__08.gif";
+	document.images['a3'].src="Forca__09.gif";
+	document.images['a4'].src="Forca__07.gif";
+	document.images['a5'].src="Forca__10.gif";
+	document.images['a6'].src="Forca__14.gif";
+	document.images['a7'].src="Forca__16.gif";
+	document.images['a8'].src="Forca__17.gif";
+	document.images['a9'].src="Forca__02.gif";
+	document.images['a10'].src="Forca__01.gif";
+	document.images['a11'].src="Forca__03.gif";
+	document.images['a12'].src="Forca__04.gif";
+	document.images['a13'].src="Forca__13.gif";
 	second = 0;
 	acabou = false;
 	morreu = false;
@@ -186,29 +186,29 @@ function seek(letter){
 				  }else{
 					    failnum++;
 						if (failnum == 1){
-						    document.images['a1'].src="images/Forca_05.gif";
-						    document.images['a2'].src="images/Forca_08.gif";
+						    document.images['a1'].src="Forca_05.gif";
+						    document.images['a2'].src="Forca_08.gif";
 						}
 						if (failnum == 2){
-						    document.images['a3'].src="images/Forca_09.gif";
+						    document.images['a3'].src="Forca_09.gif";
 						}
 						if (failnum == 3){
-						    document.images['a4'].src="images/Forca_07.gif";
+						    document.images['a4'].src="Forca_07.gif";
 						}
 						if (failnum == 4){
-						    document.images['a5'].src="images/Forca_10.gif";
+						    document.images['a5'].src="Forca_10.gif";
 						}
 						if (failnum == 5){
-						    document.images['a6'].src="images/Forca_14.gif";
+						    document.images['a6'].src="Forca_14.gif";
 						}
 						if (failnum == 6){
-						    document.images['a7'].src="images/Forca_16.gif";
+						    document.images['a7'].src="Forca_16.gif";
 						}
 						if (failnum == 7){
-						    document.images['a8'].src="images/Forca_17.gif";
+						    document.images['a8'].src="Forca_17.gif";
 						}
 						if (failnum == 8){
-						    document.images['a1'].src="images/Forca_1_05.gif";
+						    document.images['a1'].src="Forca_1_05.gif";
 						}						
 				  }
 				  
@@ -244,7 +244,7 @@ var words = new Array("","SEDE","DESPENSA","TRÉPLICA","TRENÓ","CAMALEÃO","EXA
 var quest = new Array(""," COMO SE DENOMINA O LUGAR ONDE SE FIXA UM GOVERNO?","QUE NOME SE DÁ AO LUGAR ONDE SE GUARDAM OS MANTIMENTOS?","QUAL O VERBO QUE SIGNIFICA O ATO DE RESPONDER A UMA RÉPLICA?","QUAL O VEÍCULO PROVIDO DE ESQUIS NO LUGAR DAS RODAS QUE SE USA PRA DESLIZAR SOBRE O GELO OU A NEVE?","QUAL O ANIMAL QUE MUDA DE COR?","QUAL GRUPO DE PAGODE DO CANTOR CHRIGOR?","QUEM É A NAMORADA DO MICKEY?","QUE PAÍS TEVE FIDEL CASTRO COMO PRESIDENTE?","QUAL É O TIME DO CORAÇÃO DO PADRE MARCELO ROSSI?","QUEM REPROVAVA OS CALOUROS EM SEU PROGRAMA TOCANDO UMA BUZINA?","ANTES DE CASAR COM ANA MARIA BRAGA, CARLOS MADRULHA EXERCIA QUAL PROFISSÃO?","QUAL SERIA SEU SIGNO SE VOCÊ NASCESSE NO DIA DO ANO NOVO?","QUAL A COR ASSOCIADA A GRUPOS ECOLÓGICOS?","QUAL O NOME DA ÁREA EM ROMA NA QUAL VIVE O PAPA?","QUEM FOI O GRANDE AMOR DE JULIETA?","QUE PARENTESCO TEM OS CANTORES GIAN E GIOVANI?","MARIA ODETE BRITO DE MIRANDA É O NOME VERDADEIRO DE QUAL CANTORA ?","QUAL PERSONAGEM DA TURMA DA MÔNICA TEM CINCO FIOS DE CABELO ?","QUAL É A CANTORA QUE TINHA O APELIDO DE 'TERNURINHA' NA ÉPOCA DA JOVEM GUARDA?","A ATRIZ E CANTORA SANDY É FILHA DE QUAL CANTOR?","NOS DESENHOS ANIMADOS, COMO SE CHAMA O CACHORRO MEDROSO DO SALSICHA?","NO PROGRAMA DO GUGU, EM 2005, COMO SE CHAMAVA O COMPANHEIRO DO ET?","QUANTAS DENTIÇÕES TEM O SER HUMANO DURANTE A VIDA?","EDINHO, FILHO DE PELÉ, JOGOU NO SANTOS EM QUE POSIÇÃO?","QUAL É A PEDRA PRECIOSA MAIS DURA ENCONTRADA NA NATUREZA?","QUAL É O GATO INIMIGO DO PIU-PIU NOS DESENHOS ANIMADOS?","JOANA PRADO É O NOME VERDADEIRO DE QUAL ARTISTA DA DÉCADA DE 90?","QUAL O RÉPTIL QUE MUDA DE COR CONFORME O AMBIENTE E O MEIO ONDE VIVE?","QUAL É A CAPITAL DO CINEMA MUNDIAL?","QUAL É A FRUTA QUE VOCÊ ASSOCIA COM A CIDADE DE LARANJAL?","QUANTOS CENTAVOS TEM UM REAL?","QUAL ERA O 'FRUTO PROIBIDO' QUE ADÃO E EVA COMERAM NO JARDIM DO ÉDEN?","O QUE MEDE O TERMÔMETRO?","A QUAL CONTINENTE PERTENCE O RIO AMAZONAS?","QUEM ESCULPIU PINÓCHIO?","QUAL É A MOEDA OFICIAL DOS ESTADOS UNIDOS?"," O QUE VEM DEPOIS DO VERÃO E ANTES DO INVERNO?","VIOLONCELO É UM INSTRUMENTO DE:","A BRUXA ENVENENOU BRANCA DE NEVE COM QUE FRUTA?","QUEM FOI O TÉCNICO DA SELEÇÃO BRASILEIRA DE FUTEBOL EM 2002?","O CAMELO TEM QUANTAS CORCOVAS ?","QUAL DOS SETE ANÕES USA ÓCULOS?","CAVALO, RAINHA E TORRE SÃO PEÇAS DE QUAL JOGO?","TURMALINA É UMA ESPÉCIE DE QUÊ?","SEGUNDO A BÍBLIA, CAIM MATOU QUEM?","QUE CRIATURA MITOLÓGICA É METADE MULHER E METADE PEIXE?","QUAL É A PROFISSÃO DA IRMÃ DE GUGU LIBERATO ?","DE QUAL PAÍS É O CHAMPAGNE ?","QUAL É A PEDRA PRECIOSA QUE SE FORMA LENTAMENTE DENTRO DAS OSTRAS?","EM QUE ESTADO NASCEU A CANTORA ELBA RAMALHO ?","EM QUE ESTADO DO BRASIL NASCERAM OS CANTORES CHITÃOZINHO E XORORÓ?","QUEM É A MULHER DO TARZAN ?","QUAL A PROFISSÃO DOS SETE ANÕES?","UMA EQUIPE DE VÔLEI COMEÇA UMA PARTIDA COM QUANTOS TITULARES NA QUADRA?","QUE PROFISSIONAL CONDUZ O ELEVADOR?","SEGUNDO A BÍBLIA, JESUS CRISTO TINHA QUANTOS APÓSTOLOS?","A MÁFIA SURGIU NA IDADE MÉDIA EM QUE PAÍS?","QUE PERSONAGEM DOS QUADRINHOS USA UM COELHO COMO ARMA E TEM DENTES GRANDES?","O EX PRESIDENTE FERNANDO HENRIQUE É FORMADO EM QUAL FACULDADE?","QUAL É CONSIDERADO O MÊS DAS NOIVAS?","QUE TIPO DE ANIMAL É UM ROTWEILLER?","COMO É CHAMADO O ESPORTE COM AVIÕEZINHOS VIA CONTROLE REMOTO?","TURMALINA É UMA ESPÉCIE DE QUÊ?","DE QUE COR É A PEDRA RUBI?","QUAL É A VERDURA QUE FORTALECE O MARINHEIRO POPEYE?","QUAL ERA A PROFISSÃO DO LULA EX-PRESIDENTE DO PT?","QUEM FOI O AMOR DO IMPERADOR MARCO ANTONIO?","QUAL ESTAÇÃO É CONHECIDA COMO A QUE CAEM AS FOLHAS DAS ÁRVORES?","COMO JOANA D'ARC MORREU?","QUE CARGO PÚBLICO FOI OCUPADO POR ANTONY GAROTINHO, EM 2006, NO RIO DE JANEIRO?","QUAL É O COLETIVO DE CÃES?","QUAL É A MAIOR FLORESTA DO PLANETA?","QUAL NAIPE DO BARALHO TEM O DESENHO DE CORAÇÃO?","QUE ANIMAL SE TRANSFORMA EM PRÍNCIPE, QUANDO É BEIJADO PELA PRINCESA NOS CONTOS INFANTIS?","QUAL FRUTO É CONHECIDO NO NORTE E NORDESTE DO BRASIL COMO 'JERIMUM'?","AS PONTES DE SAFENA SÃO IMPLANTADAS EM QUE PARTE DO CORPO HUMANO?","O QUE SÃO PRATO, MINAS E PROVOLONE ?","NO FAMOSO CONTO, QUE TIPO DE ANIMAL ERA 'MOBY DICK'?","QUAL É O ANIMAL QUE REPRESENTA O SIGNO DE TOURO?","QUE TIPO DE ANIMAL É O PATETA ?","QUAL É O NOME DO MACHO DA ABELHA ?","QUAL BICHO TRANSMITE A DOENÇA DE CHAGAS ?","QUAL O NOME DADO À CONTAGEM FEITA PELO GOVERNO, PARA SABER O NÚMERO DE PESSOAS DE UM PAÍS?","QUAL ORIXÁ É CONHECIDA COMO A ' RAINHA DO MAR '?","EM QUAL ESPORTE FERNANDO SCHERER O XUXA FOI UM GRANDE VENCEDOR?", "QUANTOS ANÕES HAVIA NA HISTÓRIA DA BRANCA DE NEVE?","O QUÊ A MULHER-GATO É DO BATMAN ?","COMO ERAM CHAMADOS OS NAVIOS QUE TRAZIAM OS ESCRAVOS PARA O BRASIL?","ONDE FICAM AS MULHERES DO SULTÃO?","NOS DESENHOS ANIMADOS, QUEM É A MULHER DE FRED FLINSTONE?","QUAL É O REI DOS ANIMAIS?","COMO SE CHAMA O OSSO DA COXA DO HOMEM?","COMO É CHAMADO O ESPAÇO DE TEMPO ENTRE O NASCER E O PÔR DO SOL ?","QUE FRUTA É RESSECADA PARA SE TORNAR UMA AMEIXA SECA?","QUE ANIMAL É O PERSONAGEM GARFIELD ?","QUAL PERSONAGEM VIVE NO PAÍS DAS MARAVILHAS?","O QUE NORMALMENTE AS PESSOAS CONTAM PARA DORMIR ?","COMO HEBE CAMARGO INICIOU A SUA CARREIRA?","COMO SE CHAMA A PESSOA JULGADA EM UM TRIBUNAL ?","CRUSH, PEPSI E FANTA SÃO ?","EM QUE MÊS COMEMORAMOS O DIA DOS PAIS ?","QUAL É O ESPORTE MAIS POPULAR DO BRASIL ?","O FREVO É UM RITMO DE QUE ESTADO DO BRASIL ?","QUEM É O AMIGO DA MÔNICA, QUE FALA ELADO?","QUAL DESTAS FRUTAS VEM EM CACHO: LARANJA, UVA OU PÊRA ?","QUAL É O DEUS ROMANO DO AMOR?","QUAL O NOME DO ANJO QUE ANUNCIOU À VIRGEM A CONCEPÇÃO DE JESUS?","QUAL É A ESTAÇÃO DAS FLORES ?","QUAL O ESTADO DA ÁGUA QUANDO ESTÁ EM FORMA DE GELO?","QUAL PAÍS DE ORIGEM DA FEIJOADA?","QUE AVE DORME DURANTE O DIA E CAÇA À NOITE ?","QUAL APRESENTADOR DE TV DIZIA: 'AQUI TEM CAFÉ NO BULE' ?","LUIZ GONZAGA ERA O REI DE QUÊ ?","QUEM DA TURMA DA MÔNICA É METIDO A CIENTISTA?","COMO SE CHAMA O HOMEM QUE TEM DUAS ESPOSAS AO MESMO TEMPO ?","QUAL A MATÉRIA PRIMA DO CATCHUP ?","COMO SE CHAMA O ASTRO REI QUE NOS FORNECE CALOR ?","QUAL AMIGO DO CEBOLINHA QUE NÃO TOMA BANHO ?","QUAL ERA O APELIDO DA CANTORA ELIS REGINA ?","VATAPÁ É UMA COMIDA TÍPICA DE QUE ESTADO ?","QUE POSIÇÃO NO FUTEBOL, O JOGADOR PODE TOCAR A BOLA COM AS MÃOS E MARCAR GOL?","QUEM É O MELHOR AMIGO DO MICKEY?"," QUAL É O PERSONAGEM DAS HISTÓRIAS INFANTIS QUE O NARIZ CRESCE QUANDO MENTE?","COMO SE CHAMA O BONECO QUE SE PÕE NA PLANTAÇÃO ?","QUE POLÍTICO AUSTRÍACO, FOI RESPONSÁVEL PELA MORTE DE MAIS DE 6 MILHÕES DE JUDEUS?","QUAL APRESENTADOR DE TV DIZIA: 'QUEM NÃO SE COMUNICA SE TRUMBICA'?","COMO É CHAMADA A ROUPA DOS JUDOCAS ?","QUAL O NOME DO PNEU RESERVA DO CARRO ?","QUAL NOME SE DÁ A UMA IGREJA BEM PEQUENA ?","QUAL A CAPITAL DA ESPANHA?","O QUE COBRE QUASE 75% DO PLANETA TERRA ?","BALANÇA É QUAL SÍMBOLO DO ZODÍACO?","QUE PALAVRA USAMOS PARA DIZER: TODO O TEMPO ?","O QUE SIGNIFICA A LETRA 'S' NA SIGLA SBT ?","COMO SE CHAMA O LUGAR ONDE SE GUARDAM OS VINHOS ?","EM QUAL TIME ZICO SE CONSAGROU?","QUAL O PLANETA DE ORIGEM DO SUPER-HOMEM?"," EM QUAL ESTADO DO BRASIL NASCEU A ATRIZ VERA FISCHER?","O QUE SE COMEMORA NO DIA 2 DE NOVEMBRO ?","QUAL A REGIÃO MAIS SECA DO BRASIL?","QUE ANIMAIS PUXAM O TRENÓ DE PAPAI NOEL ?","QUE PROFISSIONAL USA UM ESTETOSCÓPIO?","ONDE SÃO ACONDICIONADAS AS BALAS DE UM REVÓLVER ?","O QUE UM CRONISTA ESCREVE?","QUAL O LIVRO MAIS VENDIDO NO MUNDO?","QUAL O NOME DADO PARA A FUMAÇA QUE SAI DA ÁGUA FERVENDO?","QUAL A FLOR QUE SEGUE A LUZ DO SOL?","COMO SE CHAMAVA O DANÇARINO DO GRUPO 'É O TCHAN' NA DÉCADA DE 90 ?","QUAL A CAPITAL DO CHILE ?","O QUE SIGNIFICA A COR VERMELHA NO SEMÁFORO?","QUAL ANIMAL É A ESTRELA DO FILME 'KING-KONG'?","NA COPA DE 70, QUE JOGADOR TINHA O APELIDO DE PATADA ATÔMICA?","UMA PESSOA CLEPTOMANÍACA É:","QUAL É A CAPITAL DOS ESTADOS UNIDOS ?","DE ONDE ERA NATURAL O PINTOR PICASSO ?","UM JOGO DE VOLEY REUNE QUANTOS JOGADORES NA QUADRA ?","QUAL É O PAÍS DO TANGO?","QUE IMPERADOR TOCOU FOGO EM ROMA ?","DE QUE ORIGEM É O FÓSFORO ?","ONDE FICA A CIDADE DE POMPÉIA, QUE FOI SOTERRADA POR UM VULCÃO ?","COMO É CHAMADO QUEM NASCE EM MILÃO, NA ITÁLIA ?","QUE PROFISSIONAL USA UMA FERRAMENTA CHAMADA FORMÃO?","EM QUAL ESTÁDIO, PELÉ MARCOU SEU MILÉSIMO GOL?","O QUE É UM OBOÉ?","COMO ERAM CHAMADOS OS PILOTOS SUICIDAS DA SEGUNDA GUERRA?","O QUE É GÔNDOLA ?","SASHIMI É UM DELICADO PRATO ORIGINÁRIO DE QUE PAÍS?","COMO SE CHAMA O ALIMENTO EXTRAÍDO PELAS PLANTAS DO SOLO?","PEROBA É UMA ESPÉCIE DE QUÊ?","ONDE É QUE SE PRATICA ALPINISMO?","O COLISEU É UM MONUMENTO HISTÓRICO DE QUE CIDADE EUROPÉIA?","QUE RIO CORTA A CIDADE DE LONDRES NA INGLATERRA?","QUANTOS PONTOS MARCA O PILOTO QUE VENCE UMA CORRIDA NA FÓRMULA MUNDIAL?","QUAL A SIGLA DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS?","SEGUNDO A CRENÇA POPULAR, A MULA-SEM-CABEÇA É A MULHER DE QUEM?","COMO É CHAMADA A DOENÇA QUE CLAREAVA A PELE DE MICHAEL JACKSON?","QUAL ERA O PARCEIRO DE CRIMES DA ' BONNIE ' ? ","QUAL A MOEDA OFICIAL DA ALEMANHA?","QUAL É O NOME DO PASSARINHO NOS QUADRINHOS DE CHARLIE BROWN?","ONDE É MAIS USADO O SISMÓGRAFO?","QUAL PLANTA ERA USADA PELOS EGÍPCIOS PARA ESCREVER NA ANTIGUIDADE?","QUE PAÍS EUROPEU TEM COMO ATRAÇÃO A TOURADA ?","O QUÊ OS FILATELISTAS COLECIONAM?","QUAL DESTES ITENS TEM NUMERADOR E DENOMINADOR: FRAÇÃO OU POTENCIAÇÃO ?","EM QUE CIDADE ESTÁ LOCALIZADA A FAMOSA 'PRAÇA VERMELHA'?","QUAL O NOME DO VULCÃO QUE DESTRUIU VÁRIAS CIDADES NA ITÁLIA, ANOS ANTES DE CRISTO?","QUE ANIMAIS SÃO CRIADOS NAS POCILGAS?","QUAL É O ALIMENTO PRODUZIDO PELA MOAGEM DE GRÃOS DE CACAU?","RIO NILO, O RIO MAIS LONGO DO MUNDO, LOCALIZA-SE EM QUAL CONTINENTE ?","NOVA DELHI É A CAPITAL DE QUE PAÍS?","COMO É CHAMADO O OBJETO FALSIFICADO VENDIDO COMO ORIGINAL?","QUAL A DANÇA TÍPICA DA ARGENTINA?","QUE NOME SE DÁ À VOLTA DOS CARDUMES DE PEIXES PARA A NASCENTE?","QUEM FOI O LÍDER DA ALEMANHA QUE QUERIA CHEGAR À SUPREMACIA DA RAÇA ARIANA?","QUAL É O PAÍS QUE PARTICIPOU DE TODAS AS COPAS DO MUNDO DE FUTEBOL?","DE QUE PAÍS ASIÁTICO A CAPITAL É BEIRUTE?","QUE ANIMAL DA FAUNA BRASILEIRA ESTÁ RETRATADO NA NOTA DE DEZ REAIS?","QUAL É O NOME DA EMBARCAÇÃO TÍPICA DO LITORAL NORDESTINO BRASILEIRO?","EM QUE ESTADO AMERICANO FICA A CIDADE DE MIAMI?","QUAL É A CAPITAL DO IRAQUE?","QUEM FOI O HERÓI LENDÁRIO QUE TIRAVA SUA FORÇA DOS CABELOS?", "QUAL O NOME DO CACHORRO DE CHARLIE BROWN?","COMO É CHAMADO O LUGAR SAGRADO DOS JUDEUS?","O CAVALO MARINHO É UM ANIMAL DE QUÊ TIPO?","EM QUE CIDADE FORAM REALIZADOS OS JOGOS OLÍMPICOS DE 2000?","EM QUE PAÍS FICAVA A GRANDE MURALHA CONSTRUÍDA PELO HOMEM ?","UM ELETROCARDIOGRAMA, É UM EXAME GERALMENTE PEDIDO POR QUAL MÉDICO?","QUAL O TIME CARIOCA QUE CONTRATOU O JOGADOR DE BASQUETE OSCAR EM 2001?","QUAL O PERSONAGEM BÍBLICO CONHECIDO POR ATRAVESSAR O MAR VERMELHO?","QUAL DESSAS COBRAS NÃO É VENENOSA: CASCAVEL, JIBÓIA OU CORAL ?","QUE ANIMAL É USADO NO JOGO DE POLO?","TERESINA É CAPITAL DE QUE ESTADO BRASILEIRO ?","EM QUAL CIDADE DO JAPÃO FOI LANÇADA A PRIMEIRA BOMBA ATÔMICA?","POR QUAL NOME SÃO CONHECIDAS AS PESSOAS DO POLO ÁRTICO?","CECÍLIA MEIRÉLES É UMA:","EM QUE CIDADE FICA A SEDE DA REDE DE TV BBC?","CAMILLO É O SOBRENOME DE QUAL CANTOR NASCIDO EM BROTAS, INTERIOR DE SÃO PAULO ?","QUANTOS INTEGRANTES TINHA OS BEATLES?","COMO É O NOME DO RIACHO, EM CUJAS MARGENS FOI PROCLAMADA A INDEPENDÊNCIA DO BRASIL?","QUEM MATOU ERNEST HEMINGWAY?","QUAL O ÚNICO MAMÍFERO QUE PODE VOAR?","PINGUIM É UM ?","O SAMBA É UMA DANÇA ORIGINÁRIA DE ONDE?","EM UM ANO BISSEXTO QUE MÊS TEM UM DIA A MAIS?","QUAL DESTES INSTRUMENTOS MUSICAIS É DE SOPRO: BANDOLIN, PANDEIRO OU SAXOFONE?","QUAL FOI O ÚLTIMO PRESIDENTE MILITAR DO BRASIL?","QUE ANIMAL É O MICKEY, DE WALT DISNEY?","SE VOCÊ OUVE ALGUÉM FALAR EM 'EQUINÓCIO' VOCÊ SABE QUE ESTÃO FALANDO DE QUÊ?","EM QUAL FESTA SE COMEMORA A RESSURREIÇÃO DE CRISTO?","COMO SE CHAMA O ESTADO DE INCONSCIÊNCIA DE UMA PESSOA QUE NÃO DESPERTA MESMO COM ESTÍMULOS DOLOROSOS?","TUIUIU É UMA ESPÉCIE DE:","O QUE É O SOL ?","NA HISTÓRIA DO BRASIL A QUEM SE ATRIBUI A FRASE ' SE MIL VIDAS EU TIVESSE MIL VIDAS EU DARIA' ? ","QUEM DISSE A FRASE ' EUREKA EUREKA ' ?","QUAL É O CLIMA PREDOMINANTE NO BRASIL?","QUAL FOI A INVENÇÃO DE ELISHA OTIS?","QUAL ESPECIALISTA CUIDA DOS PÉS?","O ESTADO DA BAHIA FICA EM QUE REGIÃO DO BRASIL?","COMO SE CHAMAVA NO BRASIL O PROJETO PARA ALFABETIZAÇÃO DE ADULTOS NOS ANOS 70?","QUAL O NOME DO CLÁSSICO DO CINEMA COM HUMPHREY BOGART E INGRID BERGMAN? ","QUAL OBRA CONTÉM OS DISCURSOS DE BUDA?","QUAL DESTES PAÍSES TEM A CAPITAL COM O MESMO NOME: LUXEMBURGO, HONDURAS OU FINLÂNDIA?","QUAL É O PRIMEIRO NOME DO PINTOR CEZANNE?","QUE POVO ÁTILA LIDEROU CONTRA OS IMPERADORES ROMANOS NO SÉCULO V?","QUAL FLOR É O SÍMBOLO NACIONAL DO EGITO E FOI CONSIDERADA SAGRADA NA ANTIGUIDADE?","QUAL A ÁRVORE CUJO RAMO SIMBOLIZA A PAZ?","O QUE É PLÁTANO ?","QUAL É O ANIMAL SÍMBOLO DO PANTANAL ?","EM QUE PAÍS FOI REALIZADA A PRIMEIRA COPA DO MUNDO DE FUTEBOL?","QUAL INSTRUMENTO MEDE A ALTITUDE DO SOL E OUTROS CORPOS CELESTES?","COM QUANTOS PÃES JESUS CRISTO ALIMENTOU OS 5000?","QUE PAÍS DA EUROPA É CONHECIDO COMO PAÍSES BAIXOS?","O QUE É ORNITORRINCO ?","A MISTURA DE PEQUENAS PEDRAS, HÚMUS, AR E ÁGUA FORMAM O QUÊ?","EM QUAL CIDADE O ROBOCOP COMBATIA O CRIME?","QUEM FOI O COMANDANTE ALEMÃO CHAMADO ' A RAPOSA DO DESERTO ' ?","EM QUAL ESTADO BRASILEIRO ACONTECEU A GUERRA DE CANUDOS ?","LECH WALESA TORNOU-SE LÍDER DE QUE PARTIDO NA POLÔNIA EM 1980?","DE QUAL PAÍS NEHRU FOI PRIMEIRO MINISTRO?","QUAL O PAÍS HO CHI MINH LEVOU A GUERREAR CONTRA OS JAPONESES OS FRANCESES E DEPOIS OS AMERICANOS?","QUEM TEM A INCUMBÊNCIA DE ESCOLHER O PAPA ?","ATÉ A CHEGADA DE CORTÉS NA AMÉRICA, MONTEZUMA ERA O LÍDER DE QUAL POVO?","NO LITORAL DE QUE ESTADO FICA O ARQUIPÉLAGO DOS ABROLHOS ?","QUEM ERA O DEUS SUPREMO NA ANTIGA RELIGIÃO GREGA?","QUAL ERA O DEUS ROMANO DA GERRA?","QUAL O NOME GREGO DE VÊNUS?","QUAL RAÇA DE CACHORRO FOI GUARDADA POR SÉCULOS POR UMA CORTE IMPERIAL?","QUE PROFISSÃO TEM HOJE O EX CRAQUE DE FUTEBOL TOSTÃO ?","QUAL MADEIRA É USADA PARA TECLA DE PIANOS?","EM QUE ASSUNTO UM ENÓLOGO É ESPECIALISTA ?","QUAL A ÁRVORE QUE PARA OS GREGOS SIMBOLIZAVA VITÓRIA E ERA SAGRADA PARA APOLO?","QUAL O PRINCIPAL MINÉRIO DO ALUMÍNIO ?","COMO É CHAMADO NA PECUÁRIA O TRABALHO DE CUIDAR DE BODES E CABRAS ?","DE QUE OBJETO É O SANTO GRAAL?","ONDE NASCEU O ARTISTA PLÁSTICO CÂNDIDO PORTINARI?","COMO SE CHAMA O ESTUDO ENTRE PALAVRAS E SIGNIFICADOS?","COMO SE CHAMA O ESTUDO DAS RELAÇÕES DOS ORGANISMOS COM O SEU MEIO E UNS COM OS OUTROS?","QUAL A CIÊNCIA QUE ESTUDA A ORIGEM E DESENVOLVIMENTO DAS PALAVRAS?","EM UMA ARMADURA QUAL PARTE DO CORPO É PROTEGIDO PELO GUANTE?","CAMPALA É A CAPITAL DE QUE PAÍS?","QUAL A COBRA DO BRASIL SE ALIMENTA DE OUTRA?","O CONFUCIONISMO É UMA FILOSOFIA DE QUE NACIONALIDADE ?","QUE LUGAR DO REINO UNIDO DÁ NOME AO MERIDIANO ZERO?","QUAL PAÍS SUL-AMERICANO SE CHAMAVA PROVÍNCIA CISPLATINA ?","DE QUE PAÍS A INDONÉSIA SE TORNOU INDEPENDENTE EM 1949 ?","QUAL CIDADE DA EUROPA SEDIOU O TRATADO DA COMUNIDADE EUROPÉIA EM 1992?","QUAL ERA A NACIONALIDADE DO ESCRITOR OSCAR WILDE ?","EM QUE CONTINENTE SE LOCALIZA A MONTANHA DE KILIMANJARO ?","QUAL DAS SEGUINTES PALAVRAS É SINÔNIMO DE 'MERMAR': DIMINUIR, AUMENTAR OU ESTICAR ?","COMO SE CHAMAVA A SUBDIVISÃO ADMINISTRATIVA NA URBE ROMANA?","QUAL A CIÊNCIA QUE ESTUDA A DISTRIBUIÇÃO DOS SERES QUE VIVEM SOBRE A TERRA ?","QUAL ERA A NACIONALIDADE DO PALHAÇO CHARLIE RIVEL?","QUE UNIVERSIDADE AMERICANA ACEITOU O DESAFIO DE DESENVOLVER O ENIAC, PRIMEIRO COMPUTADOR COMERCIAL DO MUNDO?","QUAL É A SEGUNDA MAIOR ILHA DO MUNDO?","OS BAOBÁS SÃO A ÁRVORE SÍMBOLO DE QUAL PAÍS AFRICANO?","EM QUE ESTADO BRASILEIRO FICA A CIDADE DE MUCURI?","QUAL É O ADJETIVO ERUDITO DE CÃO?","QUE ELEMENTO TEM COMO SIGLA XE?","VALETA É A CAPITAL DE QUAL PAÍS?","DE ONDE FOI LANÇADO O SCD-1, PRIMEIRO SATÉLITE BRASILEIRO, CONSTRUÍDO PELO INSTITUTO NACIONAL DE PESQUISAS ESPACIAIS INPE?","EM QUAL PAÍS SURGIRAM OS CHAPÉUS PANAMÁ?","A SOLA DA BOTA DOS ESQUIMÓS É FEITA DA PELE DE QUAL MAMÍFERO?","O PRIMEIRO ENGENHO DE AÇÚCAR FOI FUNDADO EM 1533. EM QUAL CIDADE ISSO ACONTECEU?", "QUAL A ÚNICA CIDADE DO MUNDO LOCALIZADA ENTRE DOIS CONTINENTES?", "ONDE ESTÃO AS DEZ MONTANHAS MAIS ALTAS DO MUNDO?");
 
 </SCRIPT>
-<div id="enforcado" style="position:absolute; width:169px; height:337px; z-index:1; visibility:hidden;"><img src="Images/Enforcado.gif" width="169" height="337"></div>
+<div id="enforcado" style="position:absolute; width:169px; height:337px; z-index:1; visibility:hidden;"><img src="Enforcado.gif" width="169" height="337"></div>
 <FORM NAME="f">
   <table width="100%" border="0" cellspacing="5" cellpadding="0" height="100%">
     <tr> 
@@ -252,7 +252,7 @@ var quest = new Array(""," COMO SE DENOMINA O LUGAR ONDE SE FIXA UM GOVERNO?","Q
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr> 
             <td width="20%">&nbsp;</td>
-            <td align="center"><img src="Images/LogoForca.gif" width="426" height="100"></td>
+            <td align="center"><img src="LogoForca.gif" width="426" height="100"></td>
             <td width="20%" valign="middle" align="right"><a href="Forca.htm"><font size="3" face="Arial, Helvetica, sans-serif"><b><font color="#FFFF00"></font></b></font></a><br>
               <br>
               <a href="javaScript:window.close();"><font size="3" face="Arial, Helvetica, sans-serif"><b><font color="#FFFF00"></font></b></font></a> 
@@ -265,61 +265,61 @@ var quest = new Array(""," COMO SE DENOMINA O LUGAR ONDE SE FIXA UM GOVERNO?","Q
       <td width="256" valign="bottom"> 
         <table width=256 border=0 cellpadding=0 cellspacing=0>
           <tr> 
-            <td> <img src="images/spacer.gif" width=69 height=1></td>
-            <td> <img src="images/spacer.gif" width=23 height=1></td>
-            <td> <img src="images/spacer.gif" width=25 height=1></td>
-            <td> <img src="images/spacer.gif" width=9 height=1></td>
-            <td> <img src="images/spacer.gif" width=34 height=1></td>
-            <td> <img src="images/spacer.gif" width=29 height=1></td>
-            <td> <img src="images/spacer.gif" width=29 height=1></td>
-            <td> <img src="images/spacer.gif" width=39 height=1></td>
+            <td> <img src="spacer.gif" width=69 height=1></td>
+            <td> <img src="spacer.gif" width=23 height=1></td>
+            <td> <img src="spacer.gif" width=25 height=1></td>
+            <td> <img src="spacer.gif" width=9 height=1></td>
+            <td> <img src="spacer.gif" width=34 height=1></td>
+            <td> <img src="spacer.gif" width=29 height=1></td>
+            <td> <img src="spacer.gif" width=29 height=1></td>
+            <td> <img src="spacer.gif" width=39 height=1></td>
             <td></td>
           </tr>
           <tr> 
-            <td colspan=4> <img src="images/Forca__01.gif" width=126 height=54 name="a10"></td>
-            <td colspan=4> <img src="images/Forca__02.gif" width=131 height=54 name="a9"></td>
-            <td> <img src="images/spacer.gif" width=1 height=54></td>
+            <td colspan=4> <img src="Forca__01.gif" width=126 height=54 name="a10"></td>
+            <td colspan=4> <img src="Forca__02.gif" width=131 height=54 name="a9"></td>
+            <td> <img src="spacer.gif" width=1 height=54></td>
           </tr>
           <tr> 
-            <td rowspan=5> <img src="images/Forca__03.gif" width=69 height=192 name="a11"></td>
-            <td colspan=2> <img src="images/Forca__04.gif" width=48 height=94 name="a12"></td>
-            <td colspan=4> <img src="images/Forca__05.gif" width=101 height=94 name="a1"></td>
-            <td rowspan=2> <img src="images/Forca__06.gif" width=39 height=110></td>
-            <td> <img src="images/spacer.gif" width=1 height=94></td>
+            <td rowspan=5> <img src="Forca__03.gif" width=69 height=192 name="a11"></td>
+            <td colspan=2> <img src="Forca__04.gif" width=48 height=94 name="a12"></td>
+            <td colspan=4> <img src="Forca__05.gif" width=101 height=94 name="a1"></td>
+            <td rowspan=2> <img src="Forca__06.gif" width=39 height=110></td>
+            <td> <img src="spacer.gif" width=1 height=94></td>
           </tr>
           <tr> 
-            <td colspan=3 rowspan=2> <img src="images/Forca__07.gif" width=57 height=40 name="a4"></td>
-            <td colspan=3> <img src="images/Forca__08.gif" width=92 height=16 name="a2"></td>
-            <td> <img src="images/spacer.gif" width=1 height=16></td>
+            <td colspan=3 rowspan=2> <img src="Forca__07.gif" width=57 height=40 name="a4"></td>
+            <td colspan=3> <img src="Forca__08.gif" width=92 height=16 name="a2"></td>
+            <td> <img src="spacer.gif" width=1 height=16></td>
           </tr>
           <tr> 
-            <td colspan=2 rowspan=3> <img src="images/Forca__09.gif" width=63 height=82 name="a3"></td>
-            <td colspan=2 rowspan=2> <img src="images/Forca__10.gif" width=68 height=58 name="a5"></td>
-            <td> <img src="images/spacer.gif" width=1 height=24></td>
+            <td colspan=2 rowspan=3> <img src="Forca__09.gif" width=63 height=82 name="a3"></td>
+            <td colspan=2 rowspan=2> <img src="Forca__10.gif" width=68 height=58 name="a5"></td>
+            <td> <img src="spacer.gif" width=1 height=24></td>
           </tr>
           <tr> 
-            <td colspan=3 rowspan=3> <img src="images/Forca__11.gif" width=57 height=108></td>
-            <td> <img src="images/spacer.gif" width=1 height=34></td>
+            <td colspan=3 rowspan=3> <img src="Forca__11.gif" width=57 height=108></td>
+            <td> <img src="spacer.gif" width=1 height=34></td>
           </tr>
           <tr> 
-            <td colspan=2 rowspan=2> <img src="images/Forca__12.gif" width=68 height=74></td>
-            <td> <img src="images/spacer.gif" width=1 height=24></td>
+            <td colspan=2 rowspan=2> <img src="Forca__12.gif" width=68 height=74></td>
+            <td> <img src="spacer.gif" width=1 height=24></td>
           </tr>
           <tr> 
-            <td rowspan=3> <img src="images/Forca__13.gif" width=69 height=160 name="a13"></td>
-            <td colspan=2> <img src="images/Forca__14.gif" width=63 height=50 name="a6"></td>
-            <td> <img src="images/spacer.gif" width=1 height=50></td>
+            <td rowspan=3> <img src="Forca__13.gif" width=69 height=160 name="a13"></td>
+            <td colspan=2> <img src="Forca__14.gif" width=63 height=50 name="a6"></td>
+            <td> <img src="spacer.gif" width=1 height=50></td>
           </tr>
           <tr> 
-            <td rowspan=2> <img src="images/Forca__15.gif" width=23 height=110></td>
-            <td colspan=3> <img src="images/Forca__16.gif" width=68 height=91 name="a7"></td>
-            <td colspan=2> <img src="images/Forca__17.gif" width=58 height=91 name="a8"></td>
-            <td rowspan=2> <img src="images/Forca__18.gif" width=39 height=110></td>
-            <td> <img src="images/spacer.gif" width=1 height=91></td>
+            <td rowspan=2> <img src="Forca__15.gif" width=23 height=110></td>
+            <td colspan=3> <img src="Forca__16.gif" width=68 height=91 name="a7"></td>
+            <td colspan=2> <img src="Forca__17.gif" width=58 height=91 name="a8"></td>
+            <td rowspan=2> <img src="Forca__18.gif" width=39 height=110></td>
+            <td> <img src="spacer.gif" width=1 height=91></td>
           </tr>
           <tr> 
-            <td colspan=5> <img src="images/Forca__19.gif" width=126 height=19></td>
-            <td> <img src="images/spacer.gif" width=1 height=19></td>
+            <td colspan=5> <img src="Forca__19.gif" width=126 height=19></td>
+            <td> <img src="spacer.gif" width=1 height=19></td>
           </tr>
         </table>
       </td>
