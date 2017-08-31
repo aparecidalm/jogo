@@ -8,13 +8,16 @@
 //-->
 </style>
 </head>
+
 <body bgcolor="#FF6600" text="#000000" leftmargin="0" topmargin="0">
 <SCRIPT LANGUAGE="JavaScript">
+
 var alpha=new Array();
 var alpha_index=0;
 	
 var bravo=new Array();
 var bravo_index=0;
+
 var running=0;
 var failnum=0;
 var advising=0;
@@ -23,6 +26,7 @@ var topo = 250;
 var speed = 5;
 var niveltrans = 70;
 var morreu = false;
+
 function scrollit(){
 	if (morreu){
 		if (topo <= -337){
@@ -43,6 +47,7 @@ function scrollit(){
 		document.getElementById("enforcado").style.left= "305px";
 	}		
 }
+
 function tempojogo(){
 	if (acabou){
 		clearTimeout();
@@ -73,6 +78,7 @@ function tempojogo(){
 		}
 	}
 }
+
 function pick(){
   var choice="";
   var blank=0;
@@ -112,6 +118,8 @@ function pick(){
   			running=0;
 		}
 } 
+
+
 function new_word(form){
   if(!running){
     running=1;
@@ -151,6 +159,7 @@ function new_word(form){
     advise("Já tem uma palavra em jogo!");
   }
 }
+
 function seek(letter){
   if (!running){
   	advise(".... Clique em Iniciar");
@@ -159,6 +168,7 @@ function seek(letter){
     for (i=0; i<=bravo_index; i++){
       if (bravo[i]==letter || bravo[i]==letter) t=1;
     }
+
 	  if (!t){
 		  document.f.tried.value+=letter+" "
 		  bravo_index++;
@@ -219,6 +229,7 @@ function seek(letter){
   	   }
 	}
 }
+
 function advise(msg){
   if (!advising){
     advising=-1;
@@ -227,8 +238,11 @@ function advise(msg){
     window.setTimeout("document.f.tried.value=savetext; advising=0;",1000);
   }
 }
+
 var words = new Array("","TELECOMUNICAÇÕES", "HARDWARE", "SOFTWARE", "SUPERCOMPUTADOR", "SERVIDORES", "VIRTUALIZAÇÃO", "NUVEM", "BUSINESS*INTELLIGENCE", " TCP/IP", "INTRANETS", "EXTRANETS", "ROTEADORES", "E-PROCUREMENT", "RFID", "FIREWALLS");
+
 var quest = new Array(""," É uma das infraestrutura de tecnologia que formam a base de todo do Sistema de Informação:", "É o componente físico que realiza a entrada, processamento, armazenamento e atividades de saída do computador:", "São os programas de computador que controlam toda a sua operação:", "É um computador mais sofisticado, de projeto especial, usado para executar tarefas que requerem cálculos complexos e extremamente rápidos, com milhares de variáveis, equações e medidas:", "São computadores ligados em rede, dedicados a funções comuns que os computadores clientes precisam:", "Permite que um único recurso físico (tais como um servidor ou um dispositivo de armazenamento) apareça para o usuário como vários recursos lógicos:", "É um tipo de Computação em que as empresas e indivíduos obtêm aplicações, software, hardware e outros por meio da Internet:", "Refere-se a uma categoria de software ou abordagem para a gestão da informação utilizada pelos gestores para entender e melhorar o desempenho de seus processos:", "Padrão universal de comunicação para conectar diferentes redes e computadores, inclusive a Internet:", "Conectam pessoas dentro de uma empresa, facilitando comunicações:", "Conectam uma empresa com seus parceiros comerciais, tais como fornecedores e distribuidores:", "São computadores com propósito especial que interligam milhares de redes de computadores diferentes que compõem os pacotes de Internet e a rota ao longo até seu destino final:", "É o uso da tecnologia com base na Web para apoiar os processos de aquisição, incluindo requisição, terceirização, contratação, ordenação e pagamento:", "Permite a comunicação sem contato entre o dispositivo de leitura e uma marca de identificação passiva do identificador (sigla):", "Usado para proteger a segurança das comunicações de Internet:");
+
 </SCRIPT>
 <div id="enforcado" style="position:absolute; width:169px; height:337px; z-index:1; visibility:hidden;"><img src="Enforcado.gif" width="169" height="337"></div>
 <FORM NAME="f">
@@ -365,6 +379,7 @@ var quest = new Array(""," É uma das infraestrutura de tecnologia que formam a 
               <input type=BUTTON value="*" style="width: 32; height: 32px; text-align: center; border-width: 2; border-style: outset; background: blue; font-size: 20; font-weight:bold; color: yellow; font-family: verdana;"  onMouseOver="this.style.background='yellow';this.style.color='blue'"  onMouseOut="this.style.background='blue';this.style.color='yellow'" onClick="seek('*');" name="BUTTON38">			  
               <input type=BUTTON value="-" style="width: 32; height: 32px; text-align: center; border-width: 2; border-style: outset; background: blue; font-size: 20; font-weight:bold; color: yellow; font-family: verdana;"  onMouseOver="this.style.background='yellow';this.style.color='blue'"  onMouseOut="this.style.background='blue';this.style.color='yellow'" onClick="seek('-');" name="BUTTON39">			  
               <input type=BUTTON value="/" style="width: 32; height: 32px; text-align: center; border-width: 2; border-style: outset; background: blue; font-size: 20; font-weight:bold; color: yellow; font-family: verdana;"  onMouseOver="this.style.background='yellow';this.style.color='blue'"  onMouseOut="this.style.background='blue';this.style.color='yellow'" onClick="seek('/');" name="BUTTON40">			  
+
 			</td>
           </tr>
           <tr> 
@@ -385,18 +400,3 @@ var quest = new Array(""," É uma das infraestrutura de tecnologia que formam a 
   </FORM>
 </body>
 </html>
-
-    © 2017 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    API
-    Training
-    Shop
-    Blog
-    About
-
